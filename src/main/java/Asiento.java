@@ -1,23 +1,25 @@
+package test;
+
 public class Asiento {
     
     String color;
     int precio;
     int registro;
-    
-    static int contador = 0;
 
-    Asiento(String color, int precio, int registro){
-        this.color = color;
-        this.precio = precio;
-        this.registro = registro;
-        contador++;
-    }
-
-    public void cambiarColor(String nuevoColor){
-       if (nuevoColor.equals("rojo") || nuevoColor.equals("verde") || 
-            nuevoColor.equals("amarillo") || nuevoColor.equals("negro") || 
-            nuevoColor.equals("blanco")) {
-            this.color = nuevoColor; 
+    void cambiarColor(String c){
+        switch (c){
+            case "rojo": this.color=c;
+                break;
+            case "verde": this.color=c;
+                break;
+            case "negro": this.color=c;
+                break; 
+            case "blanco": this.color=c;
+                break;
+            case "amarillo": this.color=c;
+                break;
+            default:
+                break;
         }
     }
 }

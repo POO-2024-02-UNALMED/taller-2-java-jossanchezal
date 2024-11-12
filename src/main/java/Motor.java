@@ -5,12 +5,12 @@ public class Motor {
     String tipo;
     int registro;
     
-    public void cambiarRegistro(int nuevoRegistro){
+    void cambiarRegistro(int nuevoRegistro){
         this.registro = nuevoRegistro;
     }
 
 
-    public void asignarTipo(String nuevoTipo){
+    void asignarTipo(String nuevoTipo){
         switch (nuevoTipo) {
             case "gasolina": this.tipo=nuevoTipo;
                 break;
