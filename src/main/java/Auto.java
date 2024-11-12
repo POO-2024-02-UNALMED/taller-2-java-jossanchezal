@@ -10,12 +10,11 @@ public class Auto {
         return Asiento.contador;
     }
 
-    public String verificarIntegridad(Asiento asiento, Motor motor){
-    if (Auto.registro==Asiento.registro || Motor.registro==Asiento.registro) {
-        return "Auto original";
-    }
-    else {
-        return "Las piezas no son originales"
-    }
+    public String verificarIntegridad(Asiento asiento, Motor motor) {
+        if (this.registro == asiento.registro || motor.registro == asiento.registro) {
+            return "Auto original";
+        } else {
+            return "Las piezas no son originales"; 
+        }
     }
 }
