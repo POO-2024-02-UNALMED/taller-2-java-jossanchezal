@@ -1,12 +1,11 @@
-package test;
+package  test;
 
 public class Asiento {
-    
     String color;
     int precio;
     int registro;
 
-    void cambiarColor(String c){
+    public void cambiarColor(String c){
         switch (c){
             case "rojo": this.color=c;
                 break;

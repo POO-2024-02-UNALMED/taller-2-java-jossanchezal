@@ -1,15 +1,15 @@
-package test;
-public class Auto {
-    
+package  test;
+
+public class Auto { 
     String modelo;
     int precio;
     String marca;
     int registro;
     Asiento[] asientos;
     Motor motor;
-    static String cantidadCreados;
+    public static String cantidadCreados;
 
-    int cantidadAsientos() {
+    public int cantidadAsientos() {
         int con=0;
         for(Object a:asientos){
             if(a instanceof Asiento){
@@ -19,7 +19,7 @@ public class Auto {
         return con;
     }
     
-    String verificarIntegridad() {
+    public String verificarIntegridad() {
         for(Asiento a:asientos){
             if(a instanceof Asiento && (motor.registro!=a.registro | a.registro!=registro)){
                 return "Las piezas no son originales";
